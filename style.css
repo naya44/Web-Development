@@ -1,0 +1,291 @@
+
+/* Γενικό στυλ για το σώμα */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0eae7;
+    color: #434141;
+    margin: 0;
+    padding: 0;
+}
+
+/* Στυλ για την κεφαλίδα */
+header {
+    background-color: #458dcc; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #263155; /* γραμμή */
+}
+
+/* Στυλ για το λογότυπο και τον τίτλο */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin-left: 5px;
+}
+
+.logo h1 {
+    font-family: 'Arial', serif;
+    font-size: 2em;
+    margin-left: 5px;
+    color: #263155 /* χρώμα για το logo */
+}
+
+/* Στυλ για το λογότυπο και τον τίτλο */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ευθυγράμμιση αριστερά */
+    margin-left: 20px; /* Απόσταση από την αριστερή άκρη */
+}
+
+.logo img {
+    margin-right: 10px; /* Απόσταση μεταξύ της εικόνας και του τίτλου */
+    height: 50px; /* Ρύθμιση μεγέθους για την εικόνα του λογότυπου */
+}
+
+.logo h1 {
+    font-family: 'Arial', serif;
+    font-size: 2.5em;
+    color: #263155;
+    margin: 0; /* Αφαίρεση των περιθωρίων για ακριβή ευθυγράμμιση */
+}
+
+/* Στυλ για το μενού πλοήγησης */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e4d9d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e4d9d9; /* Λαμπερό χρυσό */
+    text-decoration: underline;
+}
+
+/* Στυλ για τις επικεφαλίδες και τα κείμενα */
+h1 {
+    font-family: 'Arial', serif;
+    font-size: 2.0em;
+    color: #e4d9d9;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Arial', serif;
+    color: #263155;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Arial', serif;
+    font-size: 1.5em;
+    color: #263155;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Arial', serif;
+    font-size: 1.2em;
+    color: #555555;
+    text-align: center;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: 'Arial', serif;
+    font-size: 1.0em;
+    color: #e4d9d9;
+    text-align: center;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: 'Arial', serif;
+    font-size: 1.2em;
+    color: #263155;
+    text-align: center;
+    font-weight: 200;
+    padding: 35px 35px 
+}
+
+
+/* Στυλ για παραγράφους */
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #263155;
+    text-align: left;
+    padding: 15px 35px;
+}
+
+
+/* Στυλ για συνδέσμους */
+a {
+    color: #555555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #263155; 
+    text-decoration: underline;
+}
+
+/* Στυλ για εικόνες */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Στυλ για το υποσέλιδο */
+footer {
+    background-color: #263155;
+    color: #e4d9d9;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.0em;
+    border-top: 3px solid #e4d9d9;
+}
+
+.video-center {
+    display: flex;
+    justify-content: center;  /* Οριζόντιο κεντράρισμα */
+    align-items: center;      /* Κάθετο κεντράρισμα */
+    margin: 20px 0;           /* Προσθήκη περιθωρίων πάνω και κάτω */
+}
+
+/* Στυλ για το iframe (το YouTube βίντεο) */
+.video-center iframe {
+    max-width: 100%;   /* Το βίντεο προσαρμόζεται στο διαθέσιμο πλάτος */
+    height: 500px;     /* Καθορισμένο ύψος */
+    border: none;      /* Αφαιρούμε το περίγραμμα γύρω από το iframe */
+}
+
+/* Κλάση για να τοποθετήσει το PDF στο κέντρο */
+.pdf-center {
+    display: flex;
+    justify-content: center;  /* Οριζόντιο κεντράρισμα */
+    align-items: center;      /* Κάθετο κεντράρισμα */
+    margin: 20px 0;           /* Προσθήκη περιθωρίων πάνω και κάτω */
+}
+
+/* Στυλ για το iframe που περιέχει το PDF */
+.pdf-center iframe {
+    max-width: 100%;    /* Το PDF προσαρμόζεται στο διαθέσιμο πλάτος */
+    height: 1000px;     /* Καθορισμένο ύψος του PDF */
+    border: none;       /* Αφαιρούμε το περίγραμμα γύρω από το iframe */
+}
+
+
+footer .contact-info, footer .social-media {
+    color: #ddd;
+}
+
+footer .social-media a {
+    color: #e4d9d9;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #e4d9d9;
+}
+
+
+
+/* Στυλ για το section των κατηγοριών */
+.course-categories {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  /* Ελαφριά σκιά */
+    width: 80%;  /* Το container καταλαμβάνει το 80% του πλάτους */
+    max-width: 600px;  /* Μέγιστο πλάτος 600px */
+    margin: 40px auto;  /* Κεντράρισμα του container */
+    text-align: center;
+}
+
+/* Στυλ για τον τίτλο της ενότητας */
+.course-categories h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Στυλ για τη λίστα */
+.categories-list {
+    list-style: none;  /* Αφαιρούμε τα bullet points */
+    padding: 0;
+    margin: 10;
+
+}
+
+/* Στυλ για τα στοιχεία της λίστας */
+.categories-list li {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #e4d9d9;
+    border-radius: 4px;  /* Στρογγυλεμένες γωνίες */
+    transition: all 0.3s ease;  /* Εφέ κατά το hover */
+    border-left: 4px solid transparent;  /* Αρχική διαφάνεια για την αριστερή γραμμή */
+}
+
+/* Στυλ για τα links */
+.categories-list li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;  /* Κάνει το link να καταλαμβάνει όλο το στοιχείο */
+}
+
+/* Εφέ hover για τα στοιχεία της λίστας */
+.categories-list li:hover {
+    background-color: #458dcc;  /* Μπλε φόντο κατά το hover */
+    color: #e4d9d9;  /* Λευκό κείμενο */
+    border-left: 4px solid #fff;  /* Λευκή γραμμή αριστερά */
+    transform: translateX(5px);  /* Ελαφριά μετακίνηση προς τα δεξιά */
+}
+
+/* Στυλ για τη λίστα */
+.list {
+    list-style: none;  /* Αφαίρεση των bullet points */
+    padding: 40;
+    margin: 40;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Στυλ για τα στοιχεία της λίστας */
+.list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;  /* Διακριτή γραμμή μεταξύ των στοιχείων */
+    transition: background-color 0.3s ease;
+    padding-right: 50;
+}
