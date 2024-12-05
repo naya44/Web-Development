@@ -32,7 +32,9 @@ header {
     font-size: 2em;
     margin-left: 5px;
     color: #263155 /* χρώμα για το logo */
-}
+} 
+
+
 
 /* Στυλ για το λογότυπο και τον τίτλο */
 .logo {
@@ -307,3 +309,18 @@ footer .social-media a:hover {
       grid-template-columns: repeat(3, 1fr); /* 3 στήλες */
     }
   }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Κάθετη διάταξη */
+        align-items: center;   /* Κεντράρισμα των στοιχείων */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Αύξηση του κενού ανάμεσα στα στοιχεία */
+    }
+
+    nav ul li a {
+        font-size: 1.2em; /* Ελαφρώς μεγαλύτερο κείμενο για ευκολία */
+    }
+}
