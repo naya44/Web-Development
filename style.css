@@ -1,4 +1,4 @@
-/* Γενικό στυλ για το σώμα */
+/* Γενική εικόνα του body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0eae7;
@@ -7,58 +7,41 @@ body {
     padding: 0;
 }
 
-/* Στυλ για την κεφαλίδα */
+/* Στυλ κεφαλίδας, χρώματα, περιθώρια, στοίχηση κειμένου κτλ. */
 header {
     background-color: #458dcc; 
     color: #fff;
     padding: 10px;
     text-align: center;
-    border-bottom: 2px solid #263155; /* γραμμή */
+    border-bottom: 2px solid #263155; 
 }
 
-/* Στυλ για το λογότυπο και τον τίτλο */
+
+/*  λογότυπο και τίτλος */
 .logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Ευθυγράμμιση */
+    margin-right: 20px; /* Απόσταση από την δεξιά άκρη */
 }
 
-.logo img {
-    margin-left: 5px;
-}
-
-.logo h1 {
-    font-family: 'Arial', serif;
-    font-size: 2em;
-    margin-left: 5px;
-    color: #263155 /* χρώμα για το logo */
-} 
-
-
-
-/* Στυλ για το λογότυπο και τον τίτλο */
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Ευθυγράμμιση αριστερά */
-    margin-left: 20px; /* Απόσταση από την αριστερή άκρη */
-}
-
+/*  εικόνα λογοτύπου */
 .logo img {
     margin-right: 10px; /* Απόσταση μεταξύ της εικόνας και του τίτλου */
-    height: 50px; /* Ρύθμιση μεγέθους για την εικόνα του λογότυπου */
-}
+    height: 50px; }
 
+/* Χρώμα λογοτύπου, γραμματοσειρά και μέγεθος γραμματοσειράς */
 .logo h1 {
     font-family: 'Arial', serif;
     font-size: 2.5em;
     color: #263155;
-    margin: 0; /* Αφαίρεση των περιθωρίων για ακριβή ευθυγράμμιση */
+    margin: 0; 
 }
 
-/* Στυλ για το μενού πλοήγησης */
+
+/* μενού πλοήγησης */
 nav ul {
-    list-style: none;
+    list-style: none; /* αφαίρεση κουκίδων */
     padding: 0;
     margin: 20px 0 0 0;
     display: flex;
@@ -70,17 +53,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e4d9d9;
-    text-decoration: none;
-    font-weight: bold;
+    color: #e4d9d9; /* χρώμα κειμένου */
+    text-decoration: none; /* αφαίρεση υπογράμμισης */
+    font-weight: bold; /* έντονη γραμματοσειρά */
 }
 
 nav ul li a:hover {
-    color: #e4d9d9; /* Λαμπερό χρυσό */
-    text-decoration: underline;
+    color: #e4d9d9; 
+    text-decoration: underline; /* υπογράμμιση όταν το ποντίκι είναι πάνω απο επιλογή του μενού */
 }
 
-/* Στυλ για τις επικεφαλίδες και τα κείμενα */
+
+/* Γραμματοσειρές για όλους τους τύπους κειμένων της ιστοσελίδας (συνολικά 6 τύποι), όπως επικεφαλίδες κ.α */
 h1 {
     font-family: 'Arial', serif;
     font-size: 2.0em;
@@ -128,8 +112,7 @@ h6 {
     padding: 35px 35px 
 }
 
-
-/* Στυλ για παραγράφους */
+/* Παράγραφοι */
 p {
     font-size: 1.2em;
     line-height: 1.8;
@@ -139,7 +122,7 @@ p {
 }
 
 
-/* Στυλ για συνδέσμους */
+/* Σύνδεσμοι */
 a {
     color: #555555;
     text-decoration: none;
@@ -151,15 +134,16 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Στυλ για εικόνες */
+
+/* Εμφάνιση εικόνων ιστοσελίδας */
 img {
     display: block;
     margin: 10px auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Στρογγύλεμα εικόνων */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Σκιές εικόνων */
 }
 
-/* Στυλ για το υποσέλιδο */
+/* Εμφάνιση υποσέλιδου */
 footer {
     background-color: #263155;
     color: #e4d9d9;
@@ -169,111 +153,35 @@ footer {
     border-top: 3px solid #e4d9d9;
 }
 
-.video-center {
-    display: flex;
-    justify-content: center;  /* Οριζόντιο κεντράρισμα */
-    align-items: center;      /* Κάθετο κεντράρισμα */
-    margin: 20px 0;           /* Προσθήκη περιθωρίων πάνω και κάτω */
-}
-
-/* Στυλ για το iframe (το YouTube βίντεο) */
-.video-center iframe {
-    max-width: 100%;   /* Το βίντεο προσαρμόζεται στο διαθέσιμο πλάτος */
-    height: 500px;     /* Καθορισμένο ύψος */
-    border: none;      /* Αφαιρούμε το περίγραμμα γύρω από το iframe */
-}
-
-/* Κλάση για να τοποθετήσει το PDF στο κέντρο */
-.pdf-center {
-    display: flex;
-    justify-content: center;  /* Οριζόντιο κεντράρισμα */
-    align-items: center;      /* Κάθετο κεντράρισμα */
-    margin: 20px 0;           /* Προσθήκη περιθωρίων πάνω και κάτω */
-}
-
-/* Στυλ για το iframe που περιέχει το PDF */
-.pdf-center iframe {
-    max-width: 100%;    /* Το PDF προσαρμόζεται στο διαθέσιμο πλάτος */
-    height: 1000px;     /* Καθορισμένο ύψος του PDF */
-    border: none;       /* Αφαιρούμε το περίγραμμα γύρω από το iframe */
-}
-
-
-footer .contact-info, footer .social-media {
-    color: #ddd;
-}
-
 footer .social-media a {
     color: #e4d9d9;
     margin: 0 5px;
     text-decoration: none;
 }
 
+
 footer .social-media a:hover {
-    color: #e4d9d9;
+    color: #458dcc;     /* Αλλαγή χρώματος όταν είναι πάνω το ποντίκι*/
+}
+
+/* Βίντεο */
+.video-center {
+    display: flex;
+    justify-content: center;  /* Οριζόντιο κεντράρισμα του βίντεο στο lectureofchoice.html */
+    align-items: center;      /* Κάθετο κεντράρισμα του βίντεο lectureofchoice.html */
+    margin: 20px 0;           /* Περιθώρια πάνω και κάτω */
+}
+
+/* PDF */
+.pdf-center {
+    display: flex;
+    justify-content: center;  /* Οριζόντιο κεντράρισμα στο bookofchoice.html */
+    align-items: center;      /* Κάθετο κεντράρισμα στο bookofchoice.html */
+    margin: 20px 0;           
 }
 
 
-
-/* Στυλ για το section των κατηγοριών */
-.course-categories {
-    padding: 40px 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  /* Ελαφριά σκιά */
-    width: 80%;  /* Το container καταλαμβάνει το 80% του πλάτους */
-    max-width: 600px;  /* Μέγιστο πλάτος 600px */
-    margin: 40px auto;  /* Κεντράρισμα του container */
-    text-align: center;
-}
-
-/* Στυλ για τον τίτλο της ενότητας */
-.course-categories h2 {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-/* Στυλ για τη λίστα */
-.categories-list {
-    list-style: none;  /* Αφαιρούμε τα bullet points */
-    padding: 0;
-    margin: 10;
-
-}
-
-/* Στυλ για τα στοιχεία της λίστας */
-.categories-list li {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #333;
-    padding: 12px;
-    margin: 8px 0;
-    background-color: #e4d9d9;
-    border-radius: 4px;  /* Στρογγυλεμένες γωνίες */
-    transition: all 0.3s ease;  /* Εφέ κατά το hover */
-    border-left: 4px solid transparent;  /* Αρχική διαφάνεια για την αριστερή γραμμή */
-}
-
-/* Στυλ για τα links */
-.categories-list li a {
-    text-decoration: none;
-    color: inherit;
-    display: block;  /* Κάνει το link να καταλαμβάνει όλο το στοιχείο */
-}
-
-/* Εφέ hover για τα στοιχεία της λίστας */
-.categories-list li:hover {
-    background-color: #458dcc;  /* Μπλε φόντο κατά το hover */
-    color: #e4d9d9;  /* Λευκό κείμενο */
-    border-left: 4px solid #fff;  /* Λευκή γραμμή αριστερά */
-    transform: translateX(5px);  /* Ελαφριά μετακίνηση προς τα δεξιά */
-}
-
-/* Στυλ για τη λίστα */
+/* Κλάση list στα lectureofchoice.html & bookofchoice.html */
 .list {
     list-style: none;  /* Αφαίρεση των bullet points */
     padding: 40;
@@ -283,44 +191,164 @@ footer .social-media a:hover {
     color: #333;
 }
 
-/* Στυλ για τα στοιχεία της λίστας */
+/* Στοιχεία λίστας */
 .list li {
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;  /* Διακριτή γραμμή μεταξύ των στοιχείων */
+    border-bottom: 1px solid #ddd;  /* γραμμή μεταξύ των στοιχείων για διαχωρισμό */
     transition: background-color 0.3s ease;
     padding-right: 50;
 }
-.container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr; /* Μονή στήλη */
-  }
-  
-  /* Tablet διάταξη */
-  @media (min-width: 601px) and (max-width: 1024px) {
-    .container {
-      grid-template-columns: repeat(2, 1fr); /* 2 στήλες */
-    }
-  }
-  
-  /* Desktop διάταξη */
-  @media (min-width: 1025px) {
-    .container {
-      grid-template-columns: repeat(3, 1fr); /* 3 στήλες */
-    }
-  }
 
-@media (max-width: 768px) {
+/* Κλάση categories-list στο categories.html*/
+.categories-list {
+    list-style: none;  /* Αφαίρεση των bullet points */
+    padding: 0;
+    margin: 10;
+
+}
+
+/* Εμφάνιση στοιχείων λίστας */
+.categories-list li {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #e4d9d9;
+    border-radius: 4px;  /* Στρογγυλεμένες γωνίες */
+    transition: all 0.3s ease;  /* οπτικό εφέ για ομαλή μετάβαση */
+    border-left: 4px solid transparent;  
+}
+
+/* Links */
+.categories-list li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;  /* το link περιλαμβάνει όλη την γραμμή για να μπορείς να κάνεις click */
+}
+
+/* Εφέ hover για τα στοιχεία της λίστας */
+.categories-list li:hover {
+    background-color: #458dcc;  /* Μπλε φόντο όταν είναι το ποντίκι επάνω */
+    color: #e4d9d9;  
+    border-left: 4px solid #fff;  
+    transform: translateX(5px);  /*  δεξία μικρή μετακίνηση  */
+}
+
+
+/* Responsive διάταξη για κινητό */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Μικρότερο μέγεθος γραμματοσειράς */
+        padding: 0;
+    }
+
+    header {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        flex-direction: column; /* Κάθετο λογότυπο */
+        align-items: center;
+    }
+
+    .logo img {
+        margin: 0 0 10px 0; }
+
+    .logo h1 {
+        font-size: 1.8em; /* Μικρότερη γραμματοσειρά */
+    }
+
     nav ul {
-        flex-direction: column; /* Κάθετη διάταξη */
-        align-items: center;   /* Κεντράρισμα των στοιχείων */
+        flex-direction: column; /* Κάθετη διάταξη μενού */
+        padding: 0;
     }
 
     nav ul li {
-        margin: 10px 0; /* Αύξηση του κενού ανάμεσα στα στοιχεία */
+        margin: 10px 0; /* Απόσταση μεταξύ των στοιχείων */
     }
 
-    nav ul li a {
-        font-size: 1.2em; /* Ελαφρώς μεγαλύτερο κείμενο για ευκολία */
+    section {
+        padding: 10px;
+    }
+
+    .list {
+        padding: 0;
+        margin: 10px auto;
+        max-width: 100%; /* Αξιοποίηση όλου του διαθέσιμου πλάτους */
+    }
+
+    .list li {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .pdf-center iframe {
+        height: 300px; /* Μικρότερο ύψος */
+    }
+
+    footer {
+        font-size: 0.9em; /* Μείωση μεγέθους γραμματοσειράς */
+        padding: 10px;
+    }
+}
+
+
+/* Responsive διάταξη για tablet */
+@media (min-width: 601.0px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* μεγαλύτερο μέγεθος κειμένου από το κινητό */
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    .logo {
+        flex-direction: column; 
+        align-items: center;
+        
+    }
+
+    .logo img {
+        margin: 0 15px 0 0; /* Αλλαγή περιθωρίων */
+        max-width: 80px; }
+
+    .logo h1 {
+        font-size: 2em; /*  Μεγαλύτερη γραμματοσειρά */
+    }
+
+    nav ul {
+        flex-direction: column; /* Κάθετη διάταξη μενού */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;; /* Απόσταση ανάμεσα από τα στοιχεία */
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .list {
+        padding: 0;
+        margin: 15px auto;
+        max-width: 90%; 
+    }
+
+    .list li {
+        font-size: 1.2em; /* μεγαλύτερη γραμματοσειρά σε σχέση με το κινητό */
+        padding: 12px;
+    }
+
+    .pdf-center iframe {
+        height: 400px; /* αλλάγη στο ύψος του pdf για tablet */
+    }
+
+    footer {
+        font-size: 1.0em; /* Ελαφρώς μεγαλύτερο μέγεθος γραμματοσειράς σε σχέση με το κινητό */
+        padding: 15px;
     }
 }

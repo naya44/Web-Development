@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Φόρμα Εγγραφής</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<header>
+        <div class="logo">
+            <img src="assets\logo.png" alt="Logo Υπηρεσίας" width="50" height="70">
+            <h1>LA-PAss Form</h1>
+        </div>
+</header>
+<body>
+    <main>
+        <form id="registration" novalidate>
+            <h1>Φόρμα Εγγραφής</h1>
+
+    
+            <fieldset>
+                <legend>Προσωπικά Στοιχεία</legend>
+
+                <label for="fullname">Ονοματεπώνυμο:</label>
+                <input type="text" id="fullname" name="fullname" autocomplete="name">
+                <small>Απαιτείται συμπλήρωση.</small> <br><br>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+                <small>Εισάγετε έγκυρη διεύθυνση email.</small> <br><br>
+
+                <label for="address">Διεύθυνση Κατοικίας:</label>
+                <input type="text" id="address" name="address"  autocomplete="address-line1">
+
+                <label for="birthdate">Ημερομηνία Γέννησης:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <small>Πρέπει να είστε άνω των 18 ετών.</small> <br><br>
+
+                <label for="phone">Τηλέφωνο:</label>
+                <input type="tel" id="phone" name="phone" pattern="69[0-9]{8}">
+                <small>Εισάγετε έγκυρο αριθμό τηλεφώνου (π.χ. 6912345678).</small>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Στοιχεία Ταυτοποίησης</legend>
+
+                <label for="username">Όνομα Χρήστη:</label>
+                <input type="text" id="username" name="username" autocomplete="username">
+
+                <label for="password">Κωδικός:</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="Ελάχιστο 8 χαρακτήρες">
+
+                <label for="confirm-password">Επιβεβαίωση Κωδικού:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Εισάγετε ξανά τον κωδικό">
+                <small>Οι κωδικοί πρέπει να ταιριάζουν.</small> 
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Επιλογές Επικοινωνίας</legend>
+
+                <label>Θέλετε να λαμβάνετε ενημερώσεις μέσω: </label>
+                <div>
+                    <input type="checkbox" id="sms" name="communication" value="sms">
+                    <label for="sms">SMS</label>
+
+                    <input type="checkbox" id="email-comms" name="communication" value="email">
+                    <label for="email-comms">Email</label>
+
+                    <input type="checkbox" id="viber" name="communication" value="viber">
+                    <label for="viber">Viber</label>
+                </div>
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Ερωτηματολόγιο</legend>
+                <label for="education">Εκπαιδευτικό Επίπεδο:</label>
+                <select id="education" name="education" required>
+                    <option value="" disabled selected>Επιλέξτε</option>
+                    <option value="lyceum">Λύκειο</option>
+                    <option value="university">Πανεπιστήμιο</option>
+                </select>
+
+                <label for="profession">Επάγγελμα:</label>
+                <input type="text" id="profession" name="profession" autocomplete="occupation">
+            </fieldset>
+
+            <button type="submit">Υποβολή</button>
+        </form>
+    </main>
+
+    <script src="validation.js"></script>
+</body>
+</html>

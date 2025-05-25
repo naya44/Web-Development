@@ -1,0 +1,78 @@
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;  /*Γραμμή περιγράμματος γκρι*/
+    border-radius: 5px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold; /*Έντονο κείμενο*/
+    padding: 0 10px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;    /*Αποστάσεις στοιχείων*/
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /*Περίγραμμα*/
+    border-radius: 5px;
+}
+
+button {
+    background-color: #263155; 
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #263155
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #458dcc; /*Χρώμα backround*/
+    color: #434141; 
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #458dcc;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Λογότυπο */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /*  όταν δεν υπάρχει αρκετός χώρος αλλάζει γραμμή */
+    margin: 0; /*Αφαίρεση περιθωρίων*/
+}
+
+.logo img {
+    margin-right: 10px;
+    height: 50px; 
+}
+
+.logo h1 {
+    font-size: 1.5em; 
+    margin: 0;
+}
+
